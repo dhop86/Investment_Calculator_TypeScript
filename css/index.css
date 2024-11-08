@@ -1,0 +1,31 @@
+html, body {
+    font-family: veranda, sans-serif;
+    font-size: 1 em;
+}
+.col {
+    float: left;
+    width: 50%;
+}
+form {
+    width: 50%;
+}
+fieldset {
+    border: none;
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+    padding-top: .25em;
+}
+td {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: .25em;
+}
+.tableHeader {
+    font-weight: bold;
+}
+#formButtons {
+    padding-top: 1em;
+}

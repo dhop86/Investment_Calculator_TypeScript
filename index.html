@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Investment | Compound Interest Calculator</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./css/index.css">
+    </head>
+    <body>
+        <form id="form" class="center">
+            <fieldset>
+                <div class="row">
+                    <div class="col">
+                        <label for="startingInvestment">Starting Investment:</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" name="startingInvestment" id="startingInvestment">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="yearsToGrow">Years that the investments will grow: </label>
+                    </div>
+                    <div class="col">
+                        <input type="text" name="yearsToGrow" id="yearsToGrow">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="monthlyContribution">Monthly contribution: </label>
+                    </div>
+                    <div class="col">
+                        <input type="text" name="monthlyContribution" id="monthlyContribution">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="interestRate">Expected annual interest rate: </label>
+                    </div>
+                    <div class="col">
+                        <input type="text" name="interestRate" id="interestRate">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="futureInvestmentAmount">Future investment amount: </label>
+                    </div>
+                    <div class="col">
+                        <input type="text" name="futureInvestmentAmount" id="futureInvestmentAmount" disabled>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="priciple">Priciple: </label>
+                    </div>
+                    <div class="col">
+                        <input type="text" name="principle" id="principle" disabled>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="totalInterestEarned">Interest earned: </label>
+                    </div>
+                    <div class="col">
+                        <input type="text" name="totalInterestEarned" id="totalInterestEarned" disabled>
+                    </div>
+                </div>
+                <div class="row" id="formButtons">
+                    <input type="button" id="reset" value="Reset">&nbsp;
+                    <input type="button" id="submit" value="Submit">
+                </div>
+            </fieldset>
+        </form>
+        <table id="dataTable" class="center">
+            <tr class="tableHeader">
+                <td>Year</td>
+                <td>Priciple</td>
+                <td>Interest Earned</td>
+                <td>Total Investment</td>
+            </tr>
+        </table>
+        <script src="./src/index.js" type="text/javascript"></script>
+    </body>
+</html>
